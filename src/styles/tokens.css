@@ -1,0 +1,138 @@
+/* ═══════════════════════════════════════════
+   Tokens de diseño — Variables CSS y paleta SENALingua
+   ═══════════════════════════════════════════ */
+
+:root, :host {
+    /* ── Paleta de colores ── */
+    --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --color-red-50: #f5dfdf;
+    --color-red-100: #f2b5b5;
+    --color-red-200: #ee8d8d;
+    --color-red-400: #e63b3b;
+    --color-red-500: #e11111;
+    --color-red-600: #b91c1c;
+    --color-red-700: #991b1b;
+    --color-red-800: #7f1d1d;
+    --color-orange-500: #fe6e00;
+    --color-orange-600: #f05100;
+    --color-yellow-50: #fefce8;
+    --color-yellow-100: #fef9c2;
+    --color-yellow-200: #fff085;
+    --color-yellow-300: #ffe02a;
+    --color-yellow-400: #fac800;
+    --color-yellow-500: #edb200;
+    --color-yellow-600: #cd8900;
+    --color-yellow-700: #a36100;
+    --color-yellow-800: #874b00;
+    --color-yellow-900: #733e0a;
+    --color-green-50: #f0fdf4;
+    --color-green-100: #dcfce7;
+    --color-green-200: #b9f8cf;
+    --color-green-400: #05df72;
+    --color-green-500: #00c758;
+    --color-green-600: #00a544;
+    --color-green-700: #008138;
+    --color-green-800: #016630;
+    --color-emerald-500: #00bb7f;
+    --color-emerald-600: #009767;
+    --color-teal-400: #00d3bd;
+    --color-blue-50: #e0e7f6;
+    --color-blue-200: #a3b9e8;
+    --color-blue-400: #6688d8;
+    --color-blue-500: #4a70d0;
+    --color-blue-600: #2d58c8;
+    --color-blue-700: #0f3fc0;
+    --color-blue-800: #0024b8;
+    --color-blue-900: #0010a0;
+    --color-purple-50: #f1e9f2;
+    --color-purple-200: #c599c3;
+    --color-purple-300: #ab6aa8;
+    --color-purple-500: #81217d;
+    --color-purple-600: #751d72;
+    --color-purple-800: #471245;
+    --color-purple-900: #360e35;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    --color-neutral-50: #fafafa;
+    --color-neutral-900: #171717;
+    --color-black: #000;
+    --color-white: #fff;
+
+    /* ── Semantic tokens ── */
+    --font-display: var(--font-sans);
+    --bg-app: #f4faf6;
+    --bg-white: var(--color-white);
+    --text-primary: var(--color-gray-900);
+    --text-muted: var(--color-gray-600);
+    --text-subtle: var(--color-gray-400);
+    --sena-green: var(--color-green-600);
+    --sena-green-hover: var(--color-green-700);
+    --sena-green-soft: var(--color-green-50);
+    --sena-orange: var(--color-orange-600);
+    --border-light: var(--color-gray-200);
+    --border-default: var(--color-gray-300);
+    --border-accent: color-mix(in srgb, var(--color-green-500) 28%, var(--color-gray-200));
+    --glass-border: var(--border-default);
+    --glass-bg: color-mix(in srgb, var(--color-white) 85%, transparent);
+
+    /* ── Living gradients ── */
+    --gradient-brand: linear-gradient(135deg, var(--color-green-600) 0%, var(--color-emerald-500) 50%, var(--color-teal-400) 100%);
+    --gradient-hero-text: linear-gradient(120deg, var(--color-green-700) 0%, var(--color-green-500) 40%, var(--color-teal-400) 100%);
+    --gradient-warm: linear-gradient(135deg, var(--color-yellow-50) 0%, var(--color-green-50) 50%, var(--color-blue-50) 100%);
+    --gradient-subtle: linear-gradient(160deg, var(--color-white) 0%, var(--color-green-50) 60%, var(--color-blue-50) 100%);
+    --gradient-marquee: linear-gradient(90deg, var(--color-green-50), var(--color-yellow-50), var(--color-blue-50), var(--color-purple-50), var(--color-green-50));
+    --gradient-mesh-green: radial-gradient(ellipse 55% 45% at 8% 12%, color-mix(in srgb, var(--color-green-200) 55%, transparent), transparent 68%);
+    --gradient-mesh-yellow: radial-gradient(ellipse 50% 40% at 92% 18%, color-mix(in srgb, var(--color-yellow-200) 45%, transparent), transparent 65%);
+    --gradient-mesh-blue: radial-gradient(ellipse 45% 38% at 75% 88%, color-mix(in srgb, var(--color-blue-200) 40%, transparent), transparent 62%);
+    --gradient-mesh-purple: radial-gradient(ellipse 40% 35% at 15% 85%, color-mix(in srgb, var(--color-purple-200) 35%, transparent), transparent 60%);
+
+    /* ── Auth (pastel, matches mesh background) ── */
+    --gradient-auth-text: linear-gradient(120deg, var(--color-green-500) 0%, var(--color-green-400) 42%, var(--color-teal-400) 100%);
+    --gradient-auth-cta: linear-gradient(135deg, var(--color-green-400) 0%, var(--color-emerald-500) 52%, var(--color-teal-400) 100%);
+    --gradient-auth-glow: linear-gradient(135deg, var(--color-green-100), var(--color-yellow-100), var(--color-blue-100), var(--color-purple-100), var(--color-green-100));
+    --auth-surface: color-mix(in srgb, var(--color-white) 92%, var(--color-green-50));
+    --auth-surface-input: color-mix(in srgb, var(--color-white) 96%, var(--color-green-50));
+    --auth-border: color-mix(in srgb, var(--color-white) 55%, var(--color-green-100));
+    --auth-border-focus: color-mix(in srgb, var(--color-green-300) 70%, var(--color-green-200));
+    --auth-text-soft: color-mix(in srgb, var(--color-gray-500) 75%, var(--color-green-600));
+    --auth-text-label: color-mix(in srgb, var(--color-gray-500) 65%, var(--color-green-500));
+    --shadow-auth: 0 6px 28px color-mix(in srgb, var(--color-green-200) 40%, transparent);
+    --shadow-auth-glow: 0 4px 16px color-mix(in srgb, var(--color-green-300) 22%, transparent);
+    --gradient-role-apprentice: linear-gradient(135deg, var(--color-green-50), var(--color-green-100), var(--color-blue-50), var(--color-green-100));
+    --gradient-role-instructor: linear-gradient(135deg, var(--color-yellow-50), var(--color-yellow-100), var(--color-red-50), var(--color-yellow-50));
+    --role-text-title: color-mix(in srgb, var(--color-gray-700) 80%, var(--color-green-600));
+    --role-cta-green: color-mix(in srgb, var(--color-green-500) 75%, var(--color-gray-600));
+    --role-cta-warm: color-mix(in srgb, var(--color-yellow-600) 70%, var(--color-orange-500));
+
+    /* ── Shape & motion ── */
+    --radius-xl: 20px;
+    --radius-lg: 14px;
+    --radius-md: 10px;
+    --radius-sm: 6px;
+    --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.35s var(--ease-premium);
+    --transition-fast: all 0.18s var(--ease-smooth);
+
+    /* ── Depth ── */
+    --shadow-xs: 0 1px 2px color-mix(in srgb, var(--color-gray-900) 5%, transparent);
+    --shadow-sm: 0 2px 10px color-mix(in srgb, var(--color-green-600) 8%, transparent);
+    --shadow-md: 0 8px 28px color-mix(in srgb, var(--color-green-600) 10%, transparent);
+    --shadow-card: 0 1px 3px color-mix(in srgb, var(--color-gray-900) 4%, transparent), 0 6px 20px color-mix(in srgb, var(--color-green-500) 7%, transparent);
+    --shadow-soft: var(--shadow-card);
+    --shadow-glow-green: 0 4px 20px color-mix(in srgb, var(--color-green-500) 22%, transparent);
+
+    /* ── Spacing ── */
+    --space-section: 5.5rem;
+    --space-block: 2rem;
+}

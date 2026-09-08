@@ -1,0 +1,22 @@
+{
+  "name": "senalinguav1.0",
+  "version": "4.0.0",
+  "description": "SENALingua — Technical English platform for ADSO software development apprentices at SENA",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["sena", "english", "adso", "education"],
+  "author": "SENALingua",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.1",
+    "@types/node": "^22.15.3",
+    "tailwindcss": "4.3.1",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.3"
+  }
+}
